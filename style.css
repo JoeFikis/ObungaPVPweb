@@ -1,5 +1,5 @@
 :root {
-    --main-color: rgb(94, 136, 73);
+    --main-color: rgb(229, 29, 29);
     --main-color-dark: rgb(58, 88, 44);
     --border-color: hsla(0, 0%, 100%, 0.349);
     --copy-ip-hover: rgba(255, 255, 255, 0.102);
@@ -238,6 +238,10 @@ table {
     border-spacing: 0;
 }
 
+.main-body {
+    top: 50rem;
+}
+
 body {
     background-color: var(--background-color);
     background-image: url("././assets/images/background.png");
@@ -318,15 +322,19 @@ nav {
 .alert {
     background-color: yellow;
     width: 100%;
+    position: relative;
     margin-top: -10rem;
     border-radius: 1rem;
     visibility: visible;
 }
 
 
+
+
 @media only screen and (max-width: 786px) {
     body {
         overflow-y: visible;
+        background-size: 1000%;
     }
     h1 {
         padding-top: 4rem;
@@ -334,6 +342,11 @@ nav {
     nav {
         flex-direction: column;
         padding-bottom: 4rem;
+    }
+
+    .alert {
+        position: absolute;
+        margin-bottom: 35rem;
     }
 }
 
